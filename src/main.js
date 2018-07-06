@@ -58,7 +58,7 @@ const routes = [
   },
   {path:"/login",name:"loginLink",component:Login},
   {path:"/register",name:"registerLink",component:Register},    
-  {path:"/about",name:"aboutLink",redirect:"/history",component:About,children:[
+  {path:"/about",name:"aboutLink",redirect:"/contact",component:About,children:[
     {path:"/contact",name:"contactLink",redirect:"/phone",component:Contact,children:[
       {path:"/phone",name:"phoneLink",component:Phone},
       {path:"/email",name:"emailLink",component:Email},
