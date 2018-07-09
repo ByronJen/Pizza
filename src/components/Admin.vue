@@ -5,11 +5,11 @@
 </template>
 <script>
 export default {
-  data(){
-    return {
-      name:"Byron"
-    }
-  },
+  // data(){
+  //   return {
+  //     name:"Byron"
+  //   }
+  // },
   //beforeRouteEnter 每次进入组件之前
   // beforeRouteEnter:(to,from,next)=>{
   //   // alert("Hello " + this.name);//此时获取不到this.name 因为data()尚未执行
@@ -19,9 +19,9 @@ export default {
   //   })
   // }
   //beforeRouteLeave 每次离开组件之前
-  beforeRouteLeave:(to,from,next)=>{
-    confirm("确定离开？")?next():next(false);
-  }
+  // beforeRouteLeave:(to,from,next)=>{
+  //   confirm("确定离开？")?next():next(false);
+  // }
 
 }
 </script>

@@ -1,6 +1,12 @@
 <template>
-  <div>
-    <button @click="goToHistory" class="btn btn-success">Let's Order!</button>
+  <div class="row">
+    <div id="home" class="col-sm-12 text-center">
+      <div class="background">
+        <h1>欢迎大家品尝Pizza！</h1>
+        <p>这里有你喜欢的Pizza</p>
+        <button @click="goToHistory" class="btn btn-success">Let's Order!</button>
+      </div>
+    </div>
   </div>
 </template>
 <script>
