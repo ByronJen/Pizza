@@ -7,6 +7,11 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 //引入入口组件
 import App from './App' 
+//引入axios
+import axios from 'axios'
+axios.defaults.headers.common['token']="f4c902c9ae5a2a9d8f84868ad064e706"
+axios.defaults.headers.post["Content-type"] = 'Application/json'
+Vue.prototype.$axios = axios
 
 //引入roter.js
 import { routes } from './router'
