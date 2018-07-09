@@ -29,3 +29,16 @@ export default {
 }
 </script>
 
+<style>
+  #home{
+    background: url('../../src/assets/images/bg_slider.jpg') no-repeat center;
+    height: 60vh;
+  }
+  .background{
+    background:rgba(0,0,0,.6);
+    padding:30px;
+    color: #fff;
+    max-width: 30vw;
+    margin: 15vh auto 0;
+  }
+</style>

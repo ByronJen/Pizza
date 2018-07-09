@@ -22,8 +22,16 @@ Vue.use(VueResource)
 const router = new VueRouter({
   routes,//页面跳转
   mode:"history",// 消除链接中的#
-  scrollBehavior(){
-    
+  scrollBehavior(to,from,savedPost){
+    // return{x:0,y:100} //y轴定位顶部垂直距离
+    // return {selector:".btn"}  //通过选择器selector定位到对应的元素
+    //定位上次浏览的位置
+    // if(savedPost){
+    //   return savedPost;
+    // }else{
+    //   return {x:0,y:0}
+    // }
+    !savedPost?{x:0,y:0}:savedPost;
   }
 })
 
